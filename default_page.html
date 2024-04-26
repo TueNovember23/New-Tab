@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/app-bar.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="./css/search-bar.css">
+    <link rel="stylesheet" href="./css/tic-tac-toe.css">
+    <title>New Tab</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="clock" id="clock"></div>
+
+    <div class="search-container">
+        <input type="text" class="search-box" id="searchBox" placeholder="Search..." onkeypress="handleKeyPress(event)">
+        <button class="search-button" onclick="search()">Tìm kiếm</button>
+    </div>
+
+    <div class="tic-tac-toe-container">
+
+        <div class="board">
+            <div class="cell" onclick="placeMarker(0)"></div>
+            <div class="cell" onclick="placeMarker(1)"></div>
+            <div class="cell" onclick="placeMarker(2)"></div>
+            <div class="cell" onclick="placeMarker(3)"></div>
+            <div class="cell" onclick="placeMarker(4)"></div>
+            <div class="cell" onclick="placeMarker(5)"></div>
+            <div class="cell" onclick="placeMarker(6)"></div>
+            <div class="cell" onclick="placeMarker(7)"></div>
+            <div class="cell" onclick="placeMarker(8)"></div>
+        </div>
+        <button onclick="resetGame()">Reset</button>
+        <p id="winner"></p>
+    </div>
+
+    <div class="app-bar">
+        <div class="app" onmouseover="scaleApps(this)">
+            <a href="https://chat.openai.com/">
+                <img src="./images/chatgpt.jpg" alt="Chat GPT" title="Chat GPT">
+            </a>
+        </div>
+        <div class="app" onmouseover="scaleApps(this)">
+            <a href="https://sinhvien.huit.edu.vn/">
+                <img src="./images/trang-sinh-vien.png" alt="Trang sinh viên" title="Trang sinh viên">
+            </a>
+        </div>
+        <div class="app" onmouseover="scaleApps(this)">
+            <a href="https://www.youtube.com/">
+                <img src="./images/youtube.png" alt="Youtube" title="Youtube">
+            </a>
+        </div>
+        <div class="app" onmouseover="scaleApps(this)">
+            <a href="https://www.facebook.com/">
+                <img src="./images/facebook.jpg" alt="Facebook" title="Facebook">
+            </a>
+        </div>
+        <div class="app" onmouseover="scaleApps(this)">
+            <a href="https://open.spotify.com/">
+                <img src="./images/spotify.png" alt="Spotify" title="Spotify">
+            </a>
+        </div>
+        <div class="app" onmouseover="scaleApps(this)">
+            <a href="https://classroom.google.com/">
+                <img src="./images/classroom.jpg" alt="Google Classroom" title="Google Classroom">
+            </a>
+        </div>
+        <div class="app" onmouseover="scaleApps(this)">
+            <a href="https://gmail.google.com/">
+                <img src="./images/gmail.jpg" alt="Spotify" title="Spotify">
+            </a>
+        </div>
+        <div class="app" onmouseover="scaleApps(this)">
+            <a href="https://gemini.google.com/app">
+                <img src="./images/gemini.png" alt="Spotify" title="Spotify">
+            </a>
+        </div>
+    </div>
+
+</body>
+<script src="./script/app-bar.js"></script>
+<script src="./script/clock.js"></script>
+<script src="./script/search.js"></script>
+<script src="./script/tic-tac-toe.js"></script>
+</html>

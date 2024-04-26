@@ -1,0 +1,12 @@
+body {
+    background-image: url('../images/z4792878291002_03e70e26a24482949b41bc7ce59036b8.jpg');
+    background-color: black;
+    background-size: 30% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}
